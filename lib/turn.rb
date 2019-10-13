@@ -38,6 +38,9 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     turn(board)
+  else
+    return "Please try again"
+
  end
 
  display_board(board)

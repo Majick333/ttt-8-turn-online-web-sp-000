@@ -1,5 +1,5 @@
 puts board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-def player 
+def player
    "X" || "O"
 end
 

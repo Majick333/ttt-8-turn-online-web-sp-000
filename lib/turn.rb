@@ -1,7 +1,6 @@
 puts board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-def player
-   "X" || "O"
-end
+$player = "X" || "O"
+
 
 def display_board(board)
    puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -23,7 +22,7 @@ def position_taken?(board, index)
    end
 end
 
-def valid_move?(board, index)
+def valid_move?(board, index, player {"X" || "O")
    if index.between?(0,8) && !position_taken?(board, index)
       return true
    end

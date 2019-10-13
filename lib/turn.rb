@@ -1,4 +1,5 @@
 puts board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+player = "X" || "O"
 
 def display_board(board)
    puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -26,7 +27,7 @@ def valid_move?(board, index)
    end
 end
 
-def move(board, index, player = "X")
+def move(board, index, player)
     board[index]=player
 end
 
